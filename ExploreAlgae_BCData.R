@@ -11,8 +11,6 @@ library(lasso2)
 
 #read in data frame containing BC algal collections data from the UBC Herbarium 
 
-read_xlsx("data/2019Sep26_algae_bc.xlsx")
-
 #Set variable for data frame 
 dfBC <- read_xlsx("data/2019Sep26_algae_bc.xlsx")
 dfBC <- add_column(dfBC, Genus_spc = paste(dfBC$Genus," ", dfBC$Species), .after = 'Species')
